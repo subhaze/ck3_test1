@@ -1,8 +1,18 @@
-// import {test} from 'test.js';
-import {moar} from './moar.js';
+System.register(['./moar'], function (_export, _context) {
+  "use strict";
 
-// alert('asdf');
-// function blah(){
-// 	console.log(test);
-// }
+  var moar, other;
+  return {
+    setters: [function (_moar) {
+      moar = _moar.moar;
+      other = _moar.other;
+    }],
+    execute: function () {
 
+      moar();
+      other();
+    }
+  };
+});
+
+//# sourceMappingURL=main.js.map
