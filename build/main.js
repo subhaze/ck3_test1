@@ -1,18 +1,8 @@
-System.register(['./moar'], function (_export, _context) {
-  "use strict";
+'use strict';
 
-  var moar, other;
-  return {
-    setters: [function (_moar) {
-      moar = _moar.moar;
-      other = _moar.other;
-    }],
-    execute: function () {
+var _moar = require('./moar');
 
-      moar();
-      other();
-    }
-  };
-});
+(0, _moar.moar)();
+(0, _moar.other)();
 
 //# sourceMappingURL=main.js.map

@@ -1,15 +1,12 @@
-System.register(['./nest/nested'], function (_export, _context) {
-  "use strict";
+'use strict';
 
-  var something;
-  return {
-    setters: [function (_nestNested) {}],
-    execute: function () {
-      _export('something', something = 'something');
-
-      _export('something', something);
-    }
-  };
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
+exports.something = undefined;
+
+require('./nest/nested');
+
+var something = exports.something = 'something';
 
 //# sourceMappingURL=other.js.map

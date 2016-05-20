@@ -1,4 +1,4 @@
-import {moar, other} from './moar';
+ import {moar, other} from './moar';
 
 moar();
 other();
