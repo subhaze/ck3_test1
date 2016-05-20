@@ -1,5 +1,8 @@
 doctype html
 head
-	script(src="bundle.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.28/system-register-only.js")
+	script(src="main.js")
+	script.
+		System.import('main');
 body
-	h1 test
+	h1 Test
