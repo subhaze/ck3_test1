@@ -1,8 +1,6 @@
-'use strict';
+import { moar, other } from './moar';
 
-var _moar = require('./moar');
-
-(0, _moar.moar)();
-(0, _moar.other)();
+moar();
+other();
 
 //# sourceMappingURL=main.js.map

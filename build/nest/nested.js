@@ -1,10 +1,4 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-exports.nested = nested;
-function nested() {
+export function nested() {
 	console.log('nested');
 }
 

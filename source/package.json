@@ -4,13 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "browserify ../build/main.js -o ../build/bundle.js",
+    "build": "rollup -f iife -o ../build/bundle.js ../build/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "browserify": "^13.0.1"
+    "rollup": "^0.26.3"
   }
 }
