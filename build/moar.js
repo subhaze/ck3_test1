@@ -45,18 +45,3 @@ System.register("moar", ["other"], function(exports_3, context_3) {
         }
     }
 });
-System.register("main", ["moar"], function(exports_4, context_4) {
-    "use strict";
-    var __moduleName = context_4 && context_4.id;
-    var moar_1;
-    return {
-        setters:[
-            function (moar_1_1) {
-                moar_1 = moar_1_1;
-            }],
-        execute: function() {
-            moar_1.moar();
-            moar_1.other();
-        }
-    }
-});

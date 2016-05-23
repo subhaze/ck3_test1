@@ -1,2 +1,2 @@
 import './nest/nested'
-export const something = 'something';
+export const something = 'somethings';
