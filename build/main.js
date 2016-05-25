@@ -45,15 +45,28 @@ System.register("moar", ["other"], function(exports_3, context_3) {
         }
     }
 });
-System.register("main", ["moar"], function(exports_4, context_4) {
+System.register("sideeffect", [], function(exports_4, context_4) {
     "use strict";
     var __moduleName = context_4 && context_4.id;
+    var sideefect;
+    return {
+        setters:[],
+        execute: function() {
+            exports_4("sideefect", sideefect = 'blah');
+            console.log('another side effect');
+        }
+    }
+});
+System.register("main", ["moar", "sideeffect"], function(exports_5, context_5) {
+    "use strict";
+    var __moduleName = context_5 && context_5.id;
     var moar_1;
     return {
         setters:[
             function (moar_1_1) {
                 moar_1 = moar_1_1;
-            }],
+            },
+            function (_2) {}],
         execute: function() {
             moar_1.moar();
             moar_1.other();
