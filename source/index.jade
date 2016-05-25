@@ -1,8 +1,11 @@
+include _variables.jade
 doctype html
 head
+	title #{title} :: not working :(
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.28/system-register-only.js")
 	script(src="main.js")
 	script.
 		System.import('main');
 body
 	h1 Test
+	include test.jade
